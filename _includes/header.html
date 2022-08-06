@@ -28,10 +28,16 @@
         {% elsif site.medium_url %}
         <a aria-label="My Medium" target="_blank" href="https://{{ site.medium_url }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
         {% endif %}
+        {% if site.behance_username %}
+        <a aria-label="My behance" target="_blank" href="https://behance.net/{{ site.behance_username }}"><i class="icon fa fa-behance-square" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.pdf_username %}
+        <a aria-label="My behance" target="_blank" ><i class="icon fa fa-download" aria-hidden="true"></i></a>
+        {% endif %}
       </div>
       <div class="header-links">
         <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
       </div>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="#about" data-scroll><i class="icon fa fas fa-chevron-down" aria-hidden="true"></i></a>
 </div>
