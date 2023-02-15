@@ -8,13 +8,13 @@ description: Diseñadora
 username: ROMINA ORTIGALA
 #user_description: 
 user_title: Diseñadora
-email: romi.ortigala@gmail.com
-linkedin_username: romina-ortigala-55401122a
-github_username:  rominix-2022
 behance_username: RomiOrtigala
+# github_username:  rominix-2022
 pdf_username: PDF
+linkedin_username: romina-ortigala-55401122a
 # medium_username: lorem_ipsum
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
+email: romi.ortigala@gmail.com
 
 exclude: ['package.json', 'src' , 'node_modules']
