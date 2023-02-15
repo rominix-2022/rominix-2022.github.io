@@ -5,8 +5,11 @@
         <span class="site-description">{{ site.user_title }}</span>
       </h1>
       <div class="header-icons">
-        {% if site.email %}
-        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+        {% if site.behance_username %}
+        <a aria-label="My behance" target="_blank" href="https://behance.net/{{ site.behance_username }}"><i class="icon fa fa-behance-square" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.pdf_username %}
+        <a aria-label="My CV-PDF" target="_blank" href="https://drive.google.com/file/d/1FE6NkWzDduyL4vBJt74XS7J53LDJKwxy/view?usp=sharing"><i class="icon fa fa-file-pdf-o" aria-hidden="true"></i></a>
         {% endif %}
         {% if site.twitter_username %}
         <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
@@ -28,11 +31,8 @@
         {% elsif site.medium_url %}
         <a aria-label="My Medium" target="_blank" href="https://{{ site.medium_url }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
         {% endif %}
-        {% if site.behance_username %}
-        <a aria-label="My behance" target="_blank" href="https://behance.net/{{ site.behance_username }}"><i class="icon fa fa-behance-square" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.pdf_username %}
-        <a aria-label="My CV-PDF" target="_blank" href="https://drive.google.com/file/d/1FE6NkWzDduyL4vBJt74XS7J53LDJKwxy/view?usp=sharing"><i class="icon fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        {% if site.email %}
+        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
         {% endif %}
       </div>
 </div>
